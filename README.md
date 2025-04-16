@@ -39,7 +39,7 @@ Docker Compose instalado en tu máquina.
      <li>Levantará un contenedor MySQL con la base de datos.</li>
      <li>Levantará un contenedor phpMyAdmin para administrar la base de datos.</li>
 </ul>
-## 3. Acceder a la Aplicación
+## 2. Acceder a la Aplicación
 <p>
 -Aplicación Web: Accede a http://localhost:5000 en tu navegador.<br>
 -phpMyAdmin: Accede a http://localhost:8081 en tu navegador. Usa las siguientes credenciales para iniciar sesión en caso que las pida:<br>
