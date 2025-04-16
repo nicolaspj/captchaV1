@@ -9,7 +9,7 @@ Docker Compose instalado en tu máquina.
 
 ## Estructura del Proyecto
 
-`
+
 ├── Dockerfile
 ├── docker-compose.yml
 ├── fonts
@@ -17,7 +17,7 @@ Docker Compose instalado en tu máquina.
 ├── html
 │   └── (archivos de la aplicación web)
 └── README.md
-`
+
 ## Instrucciones de Ejecución
 
 ## 1. Clonar el Repositorio
