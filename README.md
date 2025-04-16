@@ -29,17 +29,21 @@ Docker Compose instalado en tu máquina.
 `git clone https://github.com/nicolaspj/captchaV1.git` <br>
 
 ## 2. Construir y Ejecutar los Contenedores
+
 <p>Utiliza Docker Compose para construir y ejecutar los contenedores:</p>
-<br>
+
+
 ` $ docker-compose up --build `
-<br>
+
 <p> Esto hará lo siguiente:</p>
 <ul>
      <li>Construirá la imagen del contenedor web utilizando el Dockerfile.</li>
      <li>Levantará un contenedor MySQL con la base de datos.</li>
      <li>Levantará un contenedor phpMyAdmin para administrar la base de datos.</li>
 </ul>
-## 2. Acceder a la Aplicación
+
+## 3. Acceder a la Aplicación
+
 <p>
 -Aplicación Web: Accede a http://localhost:5000 en tu navegador.<br>
 -phpMyAdmin: Accede a http://localhost:8081 en tu navegador. Usa las siguientes credenciales para iniciar sesión en caso que las pida:<br>
@@ -47,11 +51,12 @@ Docker Compose instalado en tu máquina.
 -Usuario: root<br>
 -Contraseña: rootpassword<br>
 </p>
+
 ## 4. Detener los Contenedores
 Para detener los contenedores, utiliza el siguiente comando:
-` 
-docker-compose down
-`
+
+`$ docker-compose down `
+
 ## Configuración del Dockerfile
 <h3>El Dockerfile configura un contenedor basado en la imagen php:7.4-apache y realiza las siguientes tareas:</h3>
 <p>
