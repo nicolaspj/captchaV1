@@ -9,7 +9,7 @@ Docker Compose instalado en tu máquina.
 
 ## Estructura del Proyecto
 
-```sh
+`
 ├── Dockerfile
 ├── docker-compose.yml
 ├── fonts
@@ -17,23 +17,23 @@ Docker Compose instalado en tu máquina.
 ├── html
 │   └── (archivos de la aplicación web)
 └── README.md
-```sh
-# Instrucciones de Ejecución
+`
+## Instrucciones de Ejecución
 
 ## 1. Clonar el Repositorio
 
-Clona este repositorio en tu máquina local:
+<p>Clona este repositorio en tu máquina local:</p>
 
-```sh
+`
 git clone <URL_del_repositorio>
 cd <nombre_del_directorio>
-
-##2. Construir y Ejecutar los Contenedores
-Utiliza Docker Compose para construir y ejecutar los contenedores:
-```sh
+`
+## 2. Construir y Ejecutar los Contenedores
+<p>Utiliza Docker Compose para construir y ejecutar los contenedores:</p>
+`sh
 docker-compose up --build
-
-#Esto hará lo siguiente:
+`
+<p> Esto hará lo siguiente:</p>
 
 -Construirá la imagen del contenedor web utilizando el Dockerfile.
 -Levantará un contenedor MySQL con la base de datos.
@@ -46,10 +46,10 @@ docker-compose up --build
 -Contraseña: rootpassword
 ##4. Detener los Contenedores
 Para detener los contenedores, utiliza el siguiente comando:
-```sh 
+` 
 docker-compose down
-
-##Configuración del Dockerfile
+`
+## Configuración del Dockerfile
 -El Dockerfile configura un contenedor basado en la imagen php:7.4-apache y realiza las siguientes tareas:
 
 -Crea el directorio para las sesiones de PHP.
