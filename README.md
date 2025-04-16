@@ -50,21 +50,22 @@ Para detener los contenedores, utiliza el siguiente comando:
 docker-compose down
 `
 ## Configuración del Dockerfile
--El Dockerfile configura un contenedor basado en la imagen php:7.4-apache y realiza las siguientes tareas:
-
--Crea el directorio para las sesiones de PHP.
--Instala las dependencias necesarias para los captcha.
--Copia el código de la aplicación al contenedor.
--Copia la fuente TTF al contenedor.
--Configura el DocumentRoot de Apache.
--Instala las extensiones de PHP necesarias.
--Expone el puerto 80 para Apache.
--Copia el contenido del directorio html al contenedor.
--Configuración del docker-compose.yml
--El archivo docker-compose.yml define los servicios necesarios para la aplicación:
-
-     -web: Construye la imagen del contenedor web utilizando el Dockerfile y expone el puerto 5000.
-     -db: Utiliza la imagen mysql:5.7 y configura la base de datos pdfdb.
-     -phpmyadmin: Utiliza la imagen phpmyadmin/phpmyadmin para administrar la base de datos.
-     -Volúmenes
-El archivo docker-compose.yml también define un volumen para persistir los datos de la base de datos en db_data.
+<h3>El Dockerfile configura un contenedor basado en la imagen php:7.4-apache y realiza las siguientes tareas:</h3>
+<p>
+Crea el directorio para las sesiones de PHP.
+<br>Instala las dependencias necesarias para los captcha.
+<br>Copia el código de la aplicación al contenedor.
+<br>Copia la fuente TTF al contenedor.
+<br>Configura el DocumentRoot de Apache.
+<br>Instala las extensiones de PHP necesarias.
+<br>Expone el puerto 80 para Apache.
+<br>Copia el contenido del directorio html al contenedor.
+<br>Configuración del docker-compose.yml
+<br>El archivo docker-compose.yml define los servicios necesarios para la aplicación:
+</p>
+     <ul>
+     <li>web: Construye la imagen del contenedor web utilizando el Dockerfile y expone el puerto 5000.</li>
+     <li>db: Utiliza la imagen mysql:5.7 y configura la base de datos pdfdb.</li>
+     <li>phpmyadmin: Utiliza la imagen phpmyadmin/phpmyadmin para administrar la base de datos.</li>
+     <li>Volúmenes : El archivo docker-compose.yml también define un volumen para persistir los datos de la base de datos en db_data.</li>
+     <ul>
