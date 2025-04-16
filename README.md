@@ -24,11 +24,10 @@ Docker Compose instalado en tu máquina.
 
 <p>Clona este repositorio en tu máquina local:</p>
 
-`
-mkdir <nombre_del_directorio> <br>
-cd <nombre_del_directorio> <br>
-git clone https://github.com/nicolaspj/captchaV1.git <br>
-`
+`mkdir <nombre_del_directorio> `<br>
+`cd <nombre_del_directorio> `<br>
+`git clone https://github.com/nicolaspj/captchaV1.git` <br>
+
 ## 2. Construir y Ejecutar los Contenedores
 <p>Utiliza Docker Compose para construir y ejecutar los contenedores:</p>
 `
