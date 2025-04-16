@@ -30,9 +30,9 @@ Docker Compose instalado en tu máquina.
 
 ## 2. Construir y Ejecutar los Contenedores
 <p>Utiliza Docker Compose para construir y ejecutar los contenedores:</p>
-`
-docker-compose up --build
-`
+<br>
+`docker-compose up --build`
+<br>
 <p> Esto hará lo siguiente:</p>
 <ul>
      <li>Construirá la imagen del contenedor web utilizando el Dockerfile.</li>
