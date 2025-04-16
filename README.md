@@ -4,11 +4,12 @@ Este proyecto utiliza Docker y Docker Compose para desplegar una aplicación web
 
 ## Requisitos Previos
 
-- Docker instalado en tu máquina.
-- Docker Compose instalado en tu máquina.
+Docker instalado en tu máquina.
+Docker Compose instalado en tu máquina.
 
 ## Estructura del Proyecto
 
+```sh
 ├── Dockerfile
 ├── docker-compose.yml
 ├── fonts
@@ -17,9 +18,9 @@ Este proyecto utiliza Docker y Docker Compose para desplegar una aplicación web
 │   └── (archivos de la aplicación web)
 └── README.md
 
-## Instrucciones de Ejecución
+# Instrucciones de Ejecución
 
-### 1. Clonar el Repositorio
+## 1. Clonar el Repositorio
 
 Clona este repositorio en tu máquina local:
 
