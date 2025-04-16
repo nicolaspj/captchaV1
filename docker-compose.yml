@@ -12,7 +12,7 @@ services:
     image: mysql:5.7
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
-      MYSQL_DATABASE: pdfdb
+      MYSQL_DATABASE: database-name
       MYSQL_USER: user
       MYSQL_PASSWORD: password
     ports:
