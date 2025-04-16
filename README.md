@@ -17,7 +17,7 @@ Docker Compose instalado en tu máquina.
 ├── html
 │   └── (archivos de la aplicación web)
 └── README.md
-
+```sh
 # Instrucciones de Ejecución
 
 ## 1. Clonar el Repositorio
