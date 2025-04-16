@@ -27,43 +27,43 @@ Clona este repositorio en tu máquina local:
 git clone <URL_del_repositorio>
 cd <nombre_del_directorio>
 
-###2. Construir y Ejecutar los Contenedores
+##2. Construir y Ejecutar los Contenedores
 Utiliza Docker Compose para construir y ejecutar los contenedores:
-<> sh
+```sh
 docker-compose up --build
 
 #Esto hará lo siguiente:
 
-Construirá la imagen del contenedor web utilizando el Dockerfile.
-Levantará un contenedor MySQL con la base de datos.
-Levantará un contenedor phpMyAdmin para administrar la base de datos.
-###3. Acceder a la Aplicación
-Aplicación Web: Accede a http://localhost:5000 en tu navegador.
-phpMyAdmin: Accede a http://localhost:8081 en tu navegador. Usa las siguientes credenciales para iniciar sesión:
-Servidor: db
-Usuario: root
-Contraseña: rootpassword
-###4. Detener los Contenedores
+-Construirá la imagen del contenedor web utilizando el Dockerfile.
+-Levantará un contenedor MySQL con la base de datos.
+-Levantará un contenedor phpMyAdmin para administrar la base de datos.
+##3. Acceder a la Aplicación
+-Aplicación Web: Accede a http://localhost:5000 en tu navegador.
+-phpMyAdmin: Accede a http://localhost:8081 en tu navegador. Usa las siguientes credenciales para iniciar sesión:
+-Servidor: db
+-Usuario: root
+-Contraseña: rootpassword
+##4. Detener los Contenedores
 Para detener los contenedores, utiliza el siguiente comando:
-<> sh 
+```sh 
 docker-compose down
 
-###Configuración del Dockerfile
-El Dockerfile configura un contenedor basado en la imagen php:7.4-apache y realiza las siguientes tareas:
+##Configuración del Dockerfile
+-El Dockerfile configura un contenedor basado en la imagen php:7.4-apache y realiza las siguientes tareas:
 
-Crea el directorio para las sesiones de PHP.
-Instala las dependencias necesarias para los captcha.
-Copia el código de la aplicación al contenedor.
-Copia la fuente TTF al contenedor.
-Configura el DocumentRoot de Apache.
-Instala las extensiones de PHP necesarias.
-Expone el puerto 80 para Apache.
-Copia el contenido del directorio html al contenedor.
-Configuración del docker-compose.yml
-El archivo docker-compose.yml define los servicios necesarios para la aplicación:
+-Crea el directorio para las sesiones de PHP.
+-Instala las dependencias necesarias para los captcha.
+-Copia el código de la aplicación al contenedor.
+-Copia la fuente TTF al contenedor.
+-Configura el DocumentRoot de Apache.
+-Instala las extensiones de PHP necesarias.
+-Expone el puerto 80 para Apache.
+-Copia el contenido del directorio html al contenedor.
+-Configuración del docker-compose.yml
+-El archivo docker-compose.yml define los servicios necesarios para la aplicación:
 
-web: Construye la imagen del contenedor web utilizando el Dockerfile y expone el puerto 5000.
-db: Utiliza la imagen mysql:5.7 y configura la base de datos pdfdb.
-phpmyadmin: Utiliza la imagen phpmyadmin/phpmyadmin para administrar la base de datos.
-Volúmenes
+     -web: Construye la imagen del contenedor web utilizando el Dockerfile y expone el puerto 5000.
+     -db: Utiliza la imagen mysql:5.7 y configura la base de datos pdfdb.
+     -phpmyadmin: Utiliza la imagen phpmyadmin/phpmyadmin para administrar la base de datos.
+     -Volúmenes
 El archivo docker-compose.yml también define un volumen para persistir los datos de la base de datos en db_data.
