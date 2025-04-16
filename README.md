@@ -1,6 +1,6 @@
-# Proyecto de Aplicación con Docker y Docker Compose
+# Proyecto de Aplicación Captcha con PHP , Docker y Docker Compose
 
-Este proyecto utiliza Docker y Docker Compose para desplegar una aplicación web con una base de datos MySQL y una interfaz de administración phpMyAdmin.
+Este proyecto utiliza Docker y Docker Compose para desplegar una aplicación web con una base de datos MySQL y una interfaz de administración phpMyAdmin en caso que se requiera.
 
 ## Requisitos Previos
 
@@ -10,13 +10,13 @@ Docker Compose instalado en tu máquina.
 ## Estructura del Proyecto
 
 
-├── Dockerfile
-├── docker-compose.yml
-├── fonts
-│   └── arial.ttf
-├── html
-│   └── (archivos de la aplicación web)
-└── README.md
+├── Dockerfile<br>
+├── docker-compose.yml<br>
+├── fonts<br>
+│   └── arial.ttf<br>
+├── html<br>
+│   └── (archivos de la aplicación web)<br>
+└── README.md<br>
 
 ## Instrucciones de Ejecución
 
@@ -25,26 +25,30 @@ Docker Compose instalado en tu máquina.
 <p>Clona este repositorio en tu máquina local:</p>
 
 `
-git clone <URL_del_repositorio>
+mkdir <nombre_del_directorio>
 cd <nombre_del_directorio>
+git clone https://github.com/nicolaspj/captchaV1.git
 `
 ## 2. Construir y Ejecutar los Contenedores
 <p>Utiliza Docker Compose para construir y ejecutar los contenedores:</p>
-`sh
+`
 docker-compose up --build
 `
 <p> Esto hará lo siguiente:</p>
-
--Construirá la imagen del contenedor web utilizando el Dockerfile.
--Levantará un contenedor MySQL con la base de datos.
--Levantará un contenedor phpMyAdmin para administrar la base de datos.
-##3. Acceder a la Aplicación
--Aplicación Web: Accede a http://localhost:5000 en tu navegador.
--phpMyAdmin: Accede a http://localhost:8081 en tu navegador. Usa las siguientes credenciales para iniciar sesión:
--Servidor: db
--Usuario: root
--Contraseña: rootpassword
-##4. Detener los Contenedores
+<ul>
+     <li>Construirá la imagen del contenedor web utilizando el Dockerfile.</li>
+     <li>Levantará un contenedor MySQL con la base de datos.</li>
+     <li>Levantará un contenedor phpMyAdmin para administrar la base de datos.</li>
+</ul>
+## 3. Acceder a la Aplicación
+<p>
+-Aplicación Web: Accede a http://localhost:5000 en tu navegador.<br>
+-phpMyAdmin: Accede a http://localhost:8081 en tu navegador. Usa las siguientes credenciales para iniciar sesión en caso que las pida:<br>
+-Servidor: db<br>
+-Usuario: root<br>
+-Contraseña: rootpassword<br>
+</p>
+## 4. Detener los Contenedores
 Para detener los contenedores, utiliza el siguiente comando:
 ` 
 docker-compose down
